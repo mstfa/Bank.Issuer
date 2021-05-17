@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bank.Issuer.Data\Bank.Issuer.Data.csproj" />
+    <ProjectReference Include="..\Bank.Issuer.Library\Bank.Issuer.Library.csproj" />
+    <ProjectReference Include="..\Bank.Issuer.Services\Bank.Issuer.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
