@@ -11,10 +11,8 @@ namespace Bank.Issuer.Data
 {
     public class SeedDb
     {
-        public static void Initialize(IServiceProvider serviceProvider)
+        public static void Initialize(BankIssuerDbContext context)
         {
-            using var context = new BankIssuerDbContext(
-                serviceProvider.GetRequiredService<DbContextOptions<BankIssuerDbContext>>());
             // Look for any board games.
             if (!context.Account.Any())
             {

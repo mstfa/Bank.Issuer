@@ -17,7 +17,7 @@ namespace Bank.Issuer.API
                 var context = services.GetRequiredService<BankIssuerDbContext>();
 
                 //4. Call the DataGenerator to create sample data
-                SeedDb.Initialize(services);
+                SeedDb.Initialize(context);
             }
 
             host.Run();
