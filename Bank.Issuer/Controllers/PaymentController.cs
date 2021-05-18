@@ -58,7 +58,7 @@ namespace Bank.Issuer.API.Controllers
             catch (Exception e)
             {
                 _logger.LogError($"{e.Message} - StackTrace : {e.StackTrace}");
-                return StatusCode(StatusCodes.Status500InternalServerError, e);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error Occurred");
             }
         }
     }
