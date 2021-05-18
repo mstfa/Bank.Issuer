@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Issuer.API", "Bank.Issuer\Bank.Issuer.API.csproj", "{6567E5CA-605B-46B9-A086-C8146141849E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Issuer.API", "Bank.Issuer\Bank.Issuer.API.csproj", "{6567E5CA-605B-46B9-A086-C8146141849E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Issuer.Library", "Bank.Issuer.Library\Bank.Issuer.Library.csproj", "{8B1274D5-4802-4FE2-A6A2-102F82794F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Issuer.Library", "Bank.Issuer.Library\Bank.Issuer.Library.csproj", "{8B1274D5-4802-4FE2-A6A2-102F82794F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Issuer.Data", "Bank.Issuer.Data\Bank.Issuer.Data.csproj", "{3B12C014-FBFF-41F4-8D9C-4DAD5109389D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Issuer.Data", "Bank.Issuer.Data\Bank.Issuer.Data.csproj", "{3B12C014-FBFF-41F4-8D9C-4DAD5109389D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Issuer.Services", "Bank.Issuer.Services\Bank.Issuer.Services.csproj", "{67A6F543-3E17-4E78-BE3B-3CD5D03EDD45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Issuer.Services", "Bank.Issuer.Services\Bank.Issuer.Services.csproj", "{67A6F543-3E17-4E78-BE3B-3CD5D03EDD45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Issuer.Core", "Bank.Issuer.Core\Bank.Issuer.Core.csproj", "{3067103F-AD6E-418C-B371-A95EE38FB45E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{67A6F543-3E17-4E78-BE3B-3CD5D03EDD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67A6F543-3E17-4E78-BE3B-3CD5D03EDD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67A6F543-3E17-4E78-BE3B-3CD5D03EDD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3067103F-AD6E-418C-B371-A95EE38FB45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3067103F-AD6E-418C-B371-A95EE38FB45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3067103F-AD6E-418C-B371-A95EE38FB45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3067103F-AD6E-418C-B371-A95EE38FB45E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using Bank.Issuer.Library.Entities.Base;
+﻿using System;
+using Bank.Issuer.Library.Entities.Base;
 
 namespace Bank.Issuer.Library.Entities
 {
@@ -6,13 +7,13 @@ namespace Bank.Issuer.Library.Entities
     {
         public decimal Amount { get; set; }
 
-        public int AccountId { get; set; }
+        public Guid AccountId { get; set; }
         public virtual Account Account { get; set; }
 
-        public int MessageTypeId { get; set; }
+        public Guid MessageTypeId { get; set; }
         public virtual MessageType MessageType { get; set; }
 
-        public int OriginId { get; set; }
+        public Guid OriginId { get; set; }
         public virtual Origin Origin { get; set; }
     }
 }

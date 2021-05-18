@@ -35,13 +35,16 @@ namespace Bank.Issuer.Data
         public DbSet<Account> Account { get; set; }
         public DbSet<Transaction> Transaction { get; set; }
         public DbSet<Audit> Audit { get; set; }
+        public DbSet<MessageType> MessageType { get; set; }
+        public DbSet<Origin> Origin { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
                 .HasIndex(u => u.AccountNumber)
                 .IsUnique();
-            modelBuilder.Seed();
+            
+            //modelBuilder.Seed();
         }
         public override int SaveChanges()
         {

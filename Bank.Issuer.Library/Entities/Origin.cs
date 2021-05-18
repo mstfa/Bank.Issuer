@@ -8,5 +8,6 @@ namespace Bank.Issuer.Library.Entities
     public class Origin:BaseEntity
     {
         public string Name { get; set; }
+        public int Rate { get; set; }
     }
 }

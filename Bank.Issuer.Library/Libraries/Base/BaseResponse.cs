@@ -9,5 +9,6 @@ namespace Bank.Issuer.Library.Libraries.Base
         public List<Exception> Errors { get; set; }
         public string Message { get; set; }
         public double Balance { get; set; }
+       
     }
 }

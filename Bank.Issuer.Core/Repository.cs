@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 using Bank.Issuer.Data;
 using Bank.Issuer.Data.Extensions;
@@ -10,7 +9,7 @@ using Bank.Issuer.Library.Entities.Base;
 using Bank.Issuer.Library.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bank.Issuer.Services.Base
+namespace Bank.Issuer.Core
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
@@ -22,17 +21,17 @@ namespace Bank.Issuer.Services.Base
         }
         public async Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includes)
         {
-            var result = _context.Set<T>().Where(i => true);
+            var result = Queryable.Where<T>(_context.Set<T>(), i => true);
             return await result.Include(includes).ToListAsync();
         }
         public async Task<IEnumerable<T>> GetByConditionAsync(Expression<Func<T, bool>> where, params Expression<Func<T, object>>[] includes)
         {
-            var result = _context.Set<T>().Where(where);
+            var result = Queryable.Where(_context.Set<T>(), where);
             return await result.Include(includes).ToListAsync();
         }
         public async Task<T> GetAsync(Guid id, params Expression<Func<T, object>>[] includes)
         {
-            var result = _context.Set<T>().Where(x => x.Id == id);
+            var result = Queryable.Where<T>(_context.Set<T>(), x => x.Id == id);
 
             return await result.Include(includes).FirstOrDefaultAsync();
         }

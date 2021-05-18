@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="Mapster.Async" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bank.Issuer.Data\Bank.Issuer.Data.csproj" />
+    <ProjectReference Include="..\Bank.Issuer.Library\Bank.Issuer.Library.csproj" />
+  </ItemGroup>
+
+</Project>
